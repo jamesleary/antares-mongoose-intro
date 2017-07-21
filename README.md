@@ -40,3 +40,28 @@ Quick rundown of new syntax we will use to query our database using Mongoose.
 ### Mongoose Schema Functions
 
 * `pre`
+Mongoose CRUD App
+
+In lecture today we went over how we can talk to our MongoDB database from our Node/Express code. Much like pg with PostGRES, we use mongoose to communicate with MongoDB.
+
+Base Mode
+
+Add the following fields to our Person Schema:
+
+dateOfBirth : a Date field for their Date of Birth
+internetPts : a Number field to track this person's awesome imaginary (yet powerful) Internet Points!
+Update the entry form to accommodate the new Date of Birth information. BUT, new people cannot dictate how many internetPts they get! Make sure each new Person stored in the database starts with 1,000 internetPoints. Don't worry about existing documents.
+
+Both pieces of data should also show up on the DOM.
+
+Hard Mode
+
+Add a button to each person listing on the DOM that, when clicked, increases their internetPts by 100 and updates their document in the collection.
+
+Pro Mode
+
+Implement a search feature. This search should be able to search for documents by name and should be implemented on the server using mongoose methods.
+
+You'll need to figure out a place on the DOM to show the results.
+
+NOTE, do not use an Angular filter for this! Use Mongoose!
