@@ -54,7 +54,7 @@ In lecture today we went over how we can talk to our MongoDB database from our N
 
 [x] Both pieces of data should also show up on the DOM.
 
-[]Add a button to each person listing on the DOM that, when clicked, increases their internetPts by 100 and updates their document in the collection.
+[x]Add a button to each person listing on the DOM that, when clicked, increases their internetPts by 100 and updates their document in the collection.
 
 []Implement a search feature. This search should be able to search for documents by name and should be implemented on the server using mongoose methods.
 

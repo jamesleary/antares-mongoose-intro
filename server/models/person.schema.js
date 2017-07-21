@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;  //capitalized since we will be using it as a cons
 var personSchema = new Schema ({
   name: {type: String, required: true, unique: true},
   location: {type: String},
-  dateOfBirth: {type: new Date()},
+  dateOfBirth: {type: Date},
   internetPts: {type: Number, default: 1000}
 
 });

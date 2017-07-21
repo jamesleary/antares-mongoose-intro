@@ -59,7 +59,23 @@ router.put('/:id', function(req,res){
     }
 
   );
-});
+});//end of PUT
+router.put('/addPoints/:id', function(req,res){
+  console.log('add points: ', req.body);
+
+  Person.findByIdAndUpdate(
+    { _id: req.params.id }, // access by ID how to find
+    { $set: { internetPts: req.body.addHun} }, // setting the updated field
+    function(err, data){
+      if (err) {
+        console.log('save error ', err);
+        res.sendStatus(500);
+      } else {
+        res.sendStatus(201);
+      }
+    }
+  );
+});//end of PUT
 
 
 

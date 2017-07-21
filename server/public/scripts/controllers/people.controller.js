@@ -31,4 +31,15 @@ myApp.controller('PeopleController', ['$http', function($http) {
       });
     };
 
+    vm.addPointsPerson = function(id, internetPts) {
+      console.log('add 100 points to id:', id);
+      var data = {addHun: internetPts + 100}; // data needs to be sent in an object, can't be a string
+      $http.put('/person/addPoints/'+ id, data ).then(function(response){
+      getPeople();
+      });
+    };
+
+
+
+
 }]);

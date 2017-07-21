@@ -34,6 +34,7 @@
                 <p>{{person.location}}</p>
                 <p>{{person.dateOfBirth}}</p>
                 <p>{{person.internetPts}}</p>
+                <button ng-click="peeps.addPointsPerson(person._id,person.internetPts)"class='btn btn-primary' name="button">Add 100pts</button>
                 <button ng-click="peeps.updatePerson(person._id)" class="btn btn-default">Update</button>
                 <button ng-click="peeps.deletePerson(person._id)" class="btn btn-danger">Delete</button>
             </div>
