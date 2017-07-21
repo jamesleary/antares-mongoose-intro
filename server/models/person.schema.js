@@ -4,7 +4,10 @@ var Schema = mongoose.Schema;  //capitalized since we will be using it as a cons
 // create the Schema
 var personSchema = new Schema ({
   name: {type: String, required: true, unique: true},
-  location: {type: String}
+  location: {type: String},
+  dateOfBirth: {type: new Date()},
+  internetPts: {type: Number, default: 1000}
+
 });
 
 // create the model
