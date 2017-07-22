@@ -38,6 +38,13 @@ myApp.controller('PeopleController', ['$http', function($http) {
       getPeople();
       });
     };
+    function searchPerson(search){
+      $http.get('/person/findPerson').then(function(response){
+        console.log(response.data);
+        vm.search = response.data;
+      });
+
+    }// end of get People
 
 
 

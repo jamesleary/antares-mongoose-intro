@@ -22,11 +22,18 @@
                 <input type="date" ng-model="peeps.newPerson.dateOfBirth" name="dob" placeholder="yyyy/mm/dd"/>
                 <input type="number" ng-model='peeps.newPerson.internetPts'name="internetPts" placeholder="1000" disabled="true"/>
                 <button class="btn btn-primary" ng-click="peeps.addPerson()">Add Person</button>
-
             </form>
+
             </div>
         </div>
+          <div class="row">
+              <div class="col-md-12">
+                <label for="search">Search:</label>
+                <input type="text" ng-model=peeps.searchValue name="search" id="search" placeholder="Search Here">
+                <button class="btn btn-primary" ng-click='peeps.searchPerson(peeps.searchValue)'>Search</button>
+              </div>
 
+          </div>
         <div class="row">
           <div class="col-md-12">
               <div ng-repeat="person in peeps.people" class="well col-md-3">
