@@ -1,10 +1,6 @@
-# Antares Mongoose Intro (completed lecture repo)
-An overview for today's Mongoose lecture.
+# Antares Mongoose Intro 
 
-We are starting with an application that will run and serve our
-index page with `npm start`. Some of the client-side markup is completed.
-
-We will complete this application using Angular and Mongoose.
+Introduce an app and use mongoose and angularJS to finish the application.  Goals outlined below.
 
 ## Agenda
 
@@ -35,11 +31,9 @@ Quick rundown of new syntax we will use to query our database using Mongoose.
 
 ### Mongoose Document Functions
 
-* `save`
+
 
 ### Mongoose Schema Functions
-
-* `pre`
 
 
 In lecture today we went over how we can talk to our MongoDB database from our Node/Express code. Much like pg with PostGRES, we use mongoose to communicate with MongoDB.
@@ -58,6 +52,6 @@ In lecture today we went over how we can talk to our MongoDB database from our N
 
 []Implement a search feature. This search should be able to search for documents by name and should be implemented on the server using mongoose methods.
 
-You'll need to figure out a place on the DOM to show the results.
 
-NOTE, do not use an Angular filter for this! Use Mongoose!
+
+
